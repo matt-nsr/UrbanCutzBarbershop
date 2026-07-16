@@ -212,7 +212,7 @@
           }
         });
       },
-      { threshold: 0.4 }
+      { threshold: 0.5, rootMargin: "0px 0px -15% 0px" }
     );
     counters.forEach(function (el) { countIo.observe(el); });
     onIoFallback(function () {
