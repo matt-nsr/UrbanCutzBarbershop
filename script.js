@@ -202,24 +202,10 @@
     }, frameMs);
   }
 
-  if ("IntersectionObserver" in window && counters.length) {
-    var countIo = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            animateCount(entry.target);
-            countIo.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5, rootMargin: "0px 0px -15% 0px" }
-    );
-    counters.forEach(function (el) { countIo.observe(el); });
-    onIoFallback(function () {
+  if (counters.length) {
+    setTimeout(function () {
       counters.forEach(animateCount);
-    });
-  } else {
-    counters.forEach(animateCount);
+    }, 1000);
   }
 
   // Review slider
