@@ -219,7 +219,7 @@ section { padding: var(--space-7) 0; position: relative; }
 .btn-whatsapp:hover { background: #1f6b45; border-color: #1f6b45; color: #fff; }
 
 .btn-block { width: 100%; }
-.btn-sm { min-height: 40px; padding: 0 18px; font-size: 0.8rem; }
+.btn-sm { min-height: 44px; padding: 0 18px; font-size: 0.8rem; }
 
 .btn svg { width: 18px; height: 18px; flex-shrink: 0; }
 
@@ -1139,6 +1139,7 @@ section { padding: var(--space-7) 0; position: relative; }
   aspect-ratio: 4/5;
   object-fit: cover;
   width: 100%;
+  height: auto;
 }
 .about-photos .tall { grid-row: span 2; aspect-ratio: 4/6.4; }
 
@@ -1221,6 +1222,7 @@ section { padding: var(--space-7) 0; position: relative; }
    ============================================================ */
 .location-photo {
   width: 100%;
+  height: auto;
   aspect-ratio: 16/9;
   object-fit: cover;
   border-bottom: 1px solid var(--color-border);
