@@ -205,7 +205,7 @@
   if (counters.length) {
     setTimeout(function () {
       counters.forEach(animateCount);
-    }, 600);
+    }, 450);
   }
 
   // Review slider
